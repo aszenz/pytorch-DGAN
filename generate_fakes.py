@@ -32,7 +32,7 @@ ngf = int(opt.ngf)
 ndf = int(opt.ndf)
 nc = 3
 
-netG = Generator(ngpu=opt.ngpu)
+netG = Generator(ngpu=opt.ngpu, nz=opt.nz, ngf=opt.ngf, nc=opt.nc)
 netG.load_state_dict(torch.load(opt.netG))
 netG.cuda()
 netG.eval()
