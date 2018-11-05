@@ -2,7 +2,7 @@ import argparse
 import torch
 import torch.nn as nn
 import torchvision.utils as vutils
-from generator import Generator
+from main import Generator
 from IPython.display import Image
 
 parser = argparse.ArgumentParser()
