@@ -37,7 +37,7 @@ netG.load_state_dict(torch.load(opt.netG))
 netG.cuda()
 netG.eval()
 
-fixed_noise = torch.randn(batchSize, nz, 1, 1, device=device)
+fixed_noise = torch.randn(opt.batchSize, nz, 1, 1, device=device)
 fake = netG(fixed_noise)
 vutils.save_image(fake.detach(), '%s' % (opt.outImg), normalize=True)
 if opt.display:
