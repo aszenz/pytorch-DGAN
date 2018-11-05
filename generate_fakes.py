@@ -1,8 +1,8 @@
 import argparse
 import torch
-import Image
 import torch.backends.cudnn as cudnn
 import torchvision.utils as vutils
+from PIL import Image
 from generator import Generator
 
 parser = argparse.ArgumentParser()
