@@ -1,9 +1,9 @@
 import argparse
 import torch
+import Image
 import torch.backends.cudnn as cudnn
 import torchvision.utils as vutils
 from generator import Generator
-from IPython.display import Image
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--netG', default='', help="path to the generator network")
@@ -41,4 +41,5 @@ fixed_noise = torch.randn(opt.batchSize, nz, 1, 1, device=device)
 fake = netG(fixed_noise)
 vutils.save_image(fake.detach(), '%s' % (opt.outImg), normalize=True)
 if opt.display:
-  Image(opt.outImg)
+  print('Fake Images Generated')
+  image = Image.open(opt.outImg).show()
