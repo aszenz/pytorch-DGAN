@@ -1,6 +1,4 @@
 import argparse
-import torch
-import torch.nn as nn
 import torchvision.utils as vutils
 from generator import Generator
 from IPython.display import Image
