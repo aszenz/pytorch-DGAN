@@ -1,4 +1,5 @@
 import argparse
+import torch.backends.cudnn as cudnn
 import torchvision.utils as vutils
 from generator import Generator
 from IPython.display import Image
