@@ -1,3 +1,3 @@
 # pytorch-DGAN
 
-Includes the code for the dcgan generator and a jupyter notebook demo
+Includes the code for the dcgan generator, training a dcgan for any image category and the code for running pretrained dcgan models.
