@@ -1,3 +1,3 @@
 # pytorch-DGAN
 
-Includes the code to train dcgan for custom images + code for running pretrained models for some image categories
+Includes the code for the dcgan generator and a jupyter notebook demo
